@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>965</width>
+    <height>841</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2" stretch="2,6">
+    <item>
+     <widget class="QTableWidget" name="Antenna">
+      <column>
+       <property name="text">
+        <string>类型</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>实际位置</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>索引</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>滑块</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>值</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,3">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QTreeWidget" name="Setting">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <column>
+           <property name="text">
+            <string>设置选项</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>设置值</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>单位</string>
+           </property>
+          </column>
+          <item>
+           <property name="text">
+            <string>频率设置</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="flags">
+            <set>ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+           </property>
+           <item>
+            <property name="text">
+             <string>开始频点</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>GHz</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>当前频点</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>GHz</string>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>结束频点</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>GHz</string>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>频率步进</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>GHz</string>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>频点数</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>个</string>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>网格设置</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <item>
+            <property name="text">
+             <string>阻抗位置</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>mm</string>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>天线长度</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>mm</string>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>网格步进</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>mm</string>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>网格数</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>个</string>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>传输线设置</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <item>
+            <property name="text">
+             <string>单位长度R</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>Ω/mm</string>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>单位长度G</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>S/mm</string>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>参考频率</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>GHz</string>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>参考1/4波长</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>mm</string>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>特性阻抗</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="text">
+             <string>Ω</string>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>仿真设置</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>自动触发</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+            </property>
+           </item>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>当前频点：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="SimFre">
+            <property name="text">
+             <string>待仿真</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>频率扫描：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="SimFreSweep">
+            <property name="text">
+             <string>待仿真</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>馈电：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_2"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>阻抗位置：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDoubleSpinBox" name="doubleSpinBox"/>
+          </item>
+          <item>
+           <widget class="QSlider" name="horizontalSlider_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTabWidget" name="Result">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="IV">
+           <attribute name="title">
+            <string>电流分布</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_4" stretch="1,50">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="Animation">
+                <property name="text">
+                 <string>动画</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="Curve">
+                <property name="text">
+                 <string>幅值</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0">
+              <item>
+               <widget class="QFrame" name="Current">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QComboBox" name="comboBox">
+                 <property name="geometry">
+                  <rect>
+                   <x>-371</x>
+                   <y>112</y>
+                   <width>67</width>
+                   <height>19</height>
+                  </rect>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="S11">
+           <attribute name="title">
+            <string>S11</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="Zin_Line">
+           <attribute name="title">
+            <string>阻抗分布</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="Zin_Fre">
+           <attribute name="title">
+            <string>Zin</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_3"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>965</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
